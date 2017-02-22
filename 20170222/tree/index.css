@@ -1,29 +1,3 @@
-/*横向虚线*/
-/*.tree-top-dotted-border {*/
-  /*display: inline-block;*/
-  /*content: "";*/
-  /*position: absolute;*/
-  /*top: 16px;*/
-  /*left: -7px;*/
-  /*width: 18px;*/
-  /*height: 0;*/
-  /*border-top: 1px dotted #ccc;*/
-  /*z-index: 1;*/
-/*}*/
-
-/*纵向虚线*/
-/*.tree-left-dotted-border {*/
-  /*display: inline-block;*/
-  /*content: "";*/
-  /*position: absolute;*/
-  /*top: -9px;*/
-  /*bottom: 16px;*/
-  /*left: -8px;*/
-  /*z-index: 1;*/
-  /*border-left: 1px dotted #ccc;*/
-
-/*}*/
-
 /*树开始*/
 .tree {
   font-size: 15px;
@@ -34,78 +8,89 @@
   position: relative;
   border: none;
 }
+
 [class*="icon-"]:first-child {
   display: inline-block;
   margin: -2px 0 0 -2px;
   position: relative;
   z-index: 2;
 }
+
 .icon-folder {
   color: #485274;
 }
+
 .icon-folder-open {
   color: #485274;
   font-size: 16px;
 }
 
-.tree-folder,.tree-item {
+.tree-folder, .tree-item {
   border: 1px solid #fff;
 }
 
 .tree-folder {
   position: relative;
 }
+
 .tree-folder:last-child::after {
-   display: inline-block;
-   content: "";
+  display: inline-block;
+  content: "";
   position: absolute;
   top: 15px;
-  bottom:0;
+  bottom: 0;
   left: -9px;
-   z-index:1;
-   border-left: 1px solid #FFF;
- }
+  z-index: 1;
+  border-left: 1px solid #FFF;
+}
 
 .tree-folder::before {
-   display: inline-block;
-   content: "";
-   position: absolute;
-   top: 16px;
-   left: -7px;
-   width: 18px;
-   height: 0;
-   border-top: 1px dotted #ccc;
-   z-index: 1;
- }
-.tree-folder.main-tree-folder::before {
-   display: none;
- }
+  display: inline-block;
+  content: "";
+  position: absolute;
+  top: 16px;
+  left: -7px;
+  width: 18px;
+  height: 0;
+  border-top: 1px dotted #ccc;
+  z-index: 1;
+}
 
-.tree-folder-header,.tree-item {
+.tree-folder.main-tree-folder::before {
+  display: none;
+}
+
+.tree-folder-header, .tree-item {
   position: relative;
   height: 32px;
   line-height: 32px;
-  padding: 0 10px ;
+  padding: 0 10px;
   z-index: 2;
 }
-.tree-folder-header i{
+
+.tree-folder-header i {
   cursor: pointer;
 }
+
 .tree-folder-name {
   cursor: pointer;
   display: inline;
   z-index: 2;
 }
+
 .tree-button-tools {
   display: none;
 }
-.tree-button-show{
+
+.tree-button-show {
   display: inline-block;
 }
+
 a {
   color: #333;
   display: inline-block;
 }
+
 .tree-folder-content {
   display: none;
   position: relative;
@@ -114,33 +99,32 @@ a {
 }
 
 .tree-folder-content::before {
-   display: inline-block;
-   content: "";
-   position: absolute;
-   top: -9px;
-   bottom: 16px;
-   left: -8px;
-   z-index: 1;
-   border-left: 1px dotted #ccc;
- }
+  display: inline-block;
+  content: "";
+  position: absolute;
+  top: -9px;
+  bottom: 16px;
+  left: -8px;
+  z-index: 1;
+  border-left: 1px dotted #ccc;
+}
+
 .tree-item {
   position: relative;
 }
-.tree-item::before {
-   display: inline-block;
-   content: "";
-   position: absolute;
-   top: 16px;
-   left: -7px;
-   width: 18px;
-   height: 0;
-   border-top: 1px dotted #ccc;
-   z-index: 1;
- }
 
-.tree-branch.active a, .tree-branch.active i {
-  color:blue;
+.tree-item::before {
+  display: inline-block;
+  content: "";
+  position: absolute;
+  top: 16px;
+  left: -7px;
+  width: 18px;
+  height: 0;
+  border-top: 1px dotted #ccc;
+  z-index: 1;
 }
+
 
 .dash-line {
   border: 1px dashed blue;
